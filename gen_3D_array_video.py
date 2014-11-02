@@ -9,7 +9,7 @@ fig = plot.figure()
 # Even if we copy the first frame. It also appears to need to be random.
 a = np.random.random((video.shape[1], video.shape[2]))
 # Does not work with matshow.
-img = plot.imshow(a, cmap = "gray")
+img = plot.imshow(a, interpolation="none", cmap = "gray")
 
 def init():
     img.set_data(np.random.random((video.shape[1], video.shape[2])))
