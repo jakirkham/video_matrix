@@ -16,5 +16,5 @@ def animate(i):
     img.set_array(video[i])
     return [img]
 
-anim = animation.FuncAnimation(fig, animate, init_func = init, frames = len(video), interval = 20, blit = True)
+anim = animation.FuncAnimation(fig, animate, init_func = init, frames = len(video), interval = 50, blit = True)
 anim.save("animation.mp4")
