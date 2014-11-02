@@ -23,6 +23,5 @@ anim = matplotlib.animation.FuncAnimation(fig,
                                           animate,
                                           init_func = init,
                                           frames = len(video),
-                                          interval = 50,
-                                          blit = True)
+                                          interval = 50)
 anim.save("animation.mp4")
