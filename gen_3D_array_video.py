@@ -19,5 +19,10 @@ def animate(i):
     img.set_array(video[i])
     return [img]
 
-anim = matplotlib.animation.FuncAnimation(fig, animate, init_func = init, frames = len(video), interval = 50, blit = True)
+anim = matplotlib.animation.FuncAnimation(fig,
+                                          animate,
+                                          init_func = init,
+                                          frames = len(video),
+                                          interval = 50,
+                                          blit = True)
 anim.save("animation.mp4")
