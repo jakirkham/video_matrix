@@ -8,6 +8,7 @@ fig = plot.figure()
 # Amazingly, we can not start with the first frame of our video.
 # Even if we copy the first frame. It also appears to need to be random.
 a = np.random.random((video.shape[1], video.shape[2]))
+# Does not work with matshow.
 img = plot.imshow(a, cmap = "gray")
 
 def init():
