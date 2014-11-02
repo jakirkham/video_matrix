@@ -11,6 +11,9 @@ a = numpy.random.random((video.shape[1], video.shape[2]))
 # Does not work with matshow.
 img = axes.imshow(a, interpolation="none", cmap = "gray")
 
+axes.set_yticklabels([])
+axes.set_xticklabels([])
+
 def init():
     img.set_data(numpy.random.random((video.shape[1], video.shape[2])))
     return [img]
